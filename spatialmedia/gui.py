@@ -23,13 +23,16 @@ GUI application for examining/injecting spatial media metadata in MP4/MOV files.
 import ntpath
 import os
 import sys
-import tkFileDialog
-import tkMessageBox
+#import tkFileDialog
+#import tkMessageBox
+from tkinter import filedialog as tkFileDialog
+from tkinter import messagebox as tkMessageBox
 import traceback
-import ttk
+#import ttk
+from tkinter import ttk
 
 try:
-    from Tkinter import *
+    from tkinter import *
 except ImportError:
     print("Tkinter library is not available.")
     exit(0)
